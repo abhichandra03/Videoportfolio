@@ -8,7 +8,7 @@ import { HiMiniSpeakerXMark } from "react-icons/hi2";
 interface workProps {
 }
 
-const work: FC<workProps> = ({}) => {
+const Work: FC<workProps> = ({}) => {
     const videoRef = useRef<HTMLVideoElement[]>([])
     const [isMuted, setIsMuted] = useState(true)
     const allVideos = ['video1.mp4', "video2.mp4"]
@@ -75,4 +75,4 @@ const work: FC<workProps> = ({}) => {
     )
 }
 
-export default work
+export default Work
