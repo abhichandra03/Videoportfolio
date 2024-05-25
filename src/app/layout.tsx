@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
-import { Inter, Cedarville_Cursive} from "next/font/google";
+import { Inter, Poppins} from "next/font/google";
 import "./globals.css";
 import HomePage from "@/Components/HomePage";
 import About from "@/Components/About";
 import Work from "@/Components/Work";
+import Navbar from "@/Components/Navbar";
+import Skills from "@/Components/Skills";
+import Contact from "@/Components/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
-const Cedarville_cursive = Cedarville_Cursive({
+const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-Cedarville-cursive',
+  weight: ['400', '600', '800'],
+  variable: '--font-poppins',
 })
 
 export const metadata: Metadata = {
@@ -24,11 +27,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${Cedarville_cursive.variable} scrollbar-hide`}>
+      <body className={`${inter.className} ${poppins.variable} scrollbar-hide`}>
         <div className="max-w-[100%] h-screen overflow-y-scroll overflow-x-hidden scrollbar-hide">
+          <Navbar/>
           <HomePage/>
           <About/>
+          <Skills/>
           <Work/>
+          <Contact/>
         </div>
       </body>
     </html>

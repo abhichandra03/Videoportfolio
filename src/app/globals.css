@@ -34,6 +34,20 @@ body {
   }
 } */
 
-.cedarville-curvise {
-  font-family: var(--font-Cedarville-cursive);
+html {
+  --scroll-behavior: smooth!important;
+  scroll-behavior: smooth!important;
+  }
+
+.poppins {
+  font-family: var(--font-poppins);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
 }
