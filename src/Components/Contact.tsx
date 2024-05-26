@@ -42,7 +42,7 @@ const Contact: FC<ContactProps> = ({}) => {
           placeholder="Message"
         ></textarea>
         <button className="text-white border-2 rounded-lg hover:bg-pink-400 hover:border-none px-4 py-3 my-8 mx-auto flex items-center">
-          Let's Collaborate
+          {`Let's Collaborate`}
         </button>
       </form>
     </div>

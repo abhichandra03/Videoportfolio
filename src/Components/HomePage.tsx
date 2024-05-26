@@ -11,7 +11,7 @@ const HomePage: FC<HomePageProps> = ({}) => {
   <div id='home' className='flex flex-col w-full h-screen md:flex-row'>
     <div className='w-full h-1/2 bg-[#607274] flex justify-center items-end p-2 md:w-3/5 md:h-full md:items-center'>
         <div className='flex flex-col text-[#FAEED1] poppins p-4'>
-            <h1 className='text-6xl font-bold lg:text-8xl'>Gayatri Singh's</h1>
+            <h1 className='text-6xl font-bold lg:text-8xl'>{`Gayatri Singh's`}</h1>
             <h2 className='text-4xl lg:text-6xl'>Portfolio</h2>
         </div>
     </div>

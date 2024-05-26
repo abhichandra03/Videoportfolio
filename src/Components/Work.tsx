@@ -8,8 +8,6 @@ import efxpfp from "./../../assests/efx pfp.png"
 import channelArt from "./../../assests/channel art.jpg"
 import banner from "./../../assests/LinkedIn banner.jpg"
 
-// import video1 from '../../assests/video1.mp4'
-// import video2 from '../../assests/video2.mp4'
 
 interface workProps {
 }
