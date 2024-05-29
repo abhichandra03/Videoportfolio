@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body className={`${inter.className} ${poppins.variable} scrollbar-hide`}>
         <div className="max-w-[100%] h-screen overflow-y-scroll overflow-x-hidden scrollbar-hide">
           <Navbar/>

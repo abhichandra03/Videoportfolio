@@ -3,7 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FC, useState } from 'react'
 import logo from './../../public/vercel.svg'
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaLinkedin } from 'react-icons/fa';
+import {BsFillPersonLinesFill} from 'react-icons/bs'
 
 interface NavbarProps {
   
@@ -13,6 +14,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
     const [nav, setNav] = useState(false);
 
   const handleClick = () => setNav(!nav);
+
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#607274] text-[#FAEED1] z-10">
@@ -29,12 +31,12 @@ const Navbar: FC<NavbarProps> = ({}) => {
 
       <ul className="hidden md:flex justify-between w-1/2 lg:w-1/3">
         <li>
-          <a href="#home" className='scroll-smooth duration-500'>
+          <a href="#home" >
             Home
           </a>
         </li>
         <li>
-          <a href="#about"  className='scroll-smooth duration-500'>
+          <a href="#about" >
             About
           </a>
         </li>
@@ -44,7 +46,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
           </a>
         </li>
         <li>
-          <a href="#work" >
+          <a href='#work'>
             Work
           </a>
         </li>
@@ -95,6 +97,30 @@ const Navbar: FC<NavbarProps> = ({}) => {
           </a>
         </li>
       </ul>
+
+      {/* Social icons */}
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+        <ul>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
+            <a
+              className="flex justify-around items-center w-full text-gray-300"
+              href="https://www.linkedin.com/in/abhichandra03/"
+              target="blank"
+            >
+              LinkedIn <FaLinkedin size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-600">
+            <a
+              className="flex justify-around items-center w-full text-gray-300"
+              href={require("../../assests/pfp.jpeg")}
+              download="Abhishek Chandra's Resume"
+            >
+              Resume <BsFillPersonLinesFill size={30} />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   )
 }
