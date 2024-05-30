@@ -14,26 +14,50 @@ const Skills: FC<SkillsProps> = ({}) => {
             <p className='text-4xl font-bold inline border-b-4 border-pink-400'>Skills</p>          
         </div>
 
-        <div className='flex max-w-[1000px] w-full justify-around p-4'>
-
-            <div className='flex flex-col'>
-                <p className='font-semibold text-xl py-2'>My Instagram</p>
+        <div className='max-w-[1000px] h-auto flex flex-col p-4 justify-around items-center'>
+            
+            <div className='flex w-full h-auto justify-center items-center p-4 -translate-x-1'>
+            
+            <div
+              id={"slider"}  
+              className="flex flex-nowrap items-center w-full h-full text-center  overflow-x-scroll scroll-smooth no-scrollbar"
+            >
+            <div className="flex justify-center items-center min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+                <p>PPC Advertising</p>
             </div>
-
-            <div className='flex flex-col'>
-                <p className='font-semibold text-xl p-2'>Skills</p>
-                <div className='flex flex-col w-full p-2 text-lg'>
-                        <p className='py-1'>Shorts/Reels</p>
-                        <p className='py-1'>Youtube Thumbnail</p>
-                        <p className='py-1'>Youtube Channel art</p>
-                        <p className='py-1'>Logo</p>
-                        <p className='py-1'>Pfp</p>
-                        <p className='py-1'>Linkedin Banner</p>
-                        <p className='py-1'>Brand ads</p>
-                    </div>
+            <div className="flex justify-center items-center min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2"> 
+                <p>Social Media Marketing</p> 
             </div>
-
+            <div className="flex justify-center items-center min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+                <p>Analytics and Reporting</p>
+            </div>
+            <div className="flex justify-center items-center min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+                <p>Crm Tools</p>
+            </div>
+            <div className="flex justify-center items-center min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+                <p>SEO</p>
+            </div>
+            <div className="flex justify-center items-center min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+                <p>Canvas</p>
+            </div>
+            <div className="flex justify-center items-center min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+                <p>Branding</p>
+            </div>
+            <div className="flex justify-center items-center min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+                <p>Illustraions</p>
+            </div>
+            <div className="flex justify-center items-center min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+                <p>Adobe After Effects</p>
+            </div>
+            <div className="flex justify-center items-center min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+                <p>VFX and Composition</p>
+            </div>
+            
+            
+            </div>
+          </div>
         </div>
+            
 
     </div>
   )

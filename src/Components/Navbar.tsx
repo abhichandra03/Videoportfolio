@@ -17,8 +17,8 @@ const Navbar: FC<NavbarProps> = ({}) => {
 
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#607274] text-[#FAEED1] z-10">
-      <div className="p-4 text-3xl">
+    <div className="fixed w-full h-[40px] top-[20px] flex justify-center items-center px-4  text-[#FAEED1] z-10">
+      {/* <div className=" p-4 text-3xl">
         <Image
           src={logo}
           className="rounded-full aspect-square object-cover"
@@ -26,10 +26,11 @@ const Navbar: FC<NavbarProps> = ({}) => {
           width={60}
           height={60}
         />
-      </div>
+      </div> */}
       {/*menu*/}
+      <div className='w-2/3 h-full flex justify-center items-center rounded-lg shadow-xl shadow-[10px_10px_20px_10px_rgb(0,0,0,0.1)] bg-[#607274] p-4 z-10 '>
 
-      <ul className="hidden md:flex justify-between w-1/2 lg:w-1/3">
+      <ul className="hidden md:flex justify-around w-1/2 lg:w-full">
         <li>
           <a href="#home" >
             Home
@@ -56,6 +57,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
           </a>
         </li>
       </ul>
+      </div>
 
       {/* Hamburger */}
 

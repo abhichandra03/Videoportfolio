@@ -24,10 +24,11 @@ const About: FC<AboutProps> = ({}) => {
           </div>
           <div>
             <p>
-            {`Hey there! 👋 I'm Gayatri, a dynamic video editor with an insatiable passion for crafting compelling visual narratives. 
-            But my love for creativity doesn't stop there. 🌟 I'm equally obsessed with the ever-evolving world of social media and digital marketing. 
-            I thrive on staying ahead of trends, mastering algorithms, and creating strategies that drive engagement and results.
-            Let's collaborate and bring your vision to life! 🚀 Connect with me to discuss how we can elevate your brand through the synergy of video production, social media management, and digital marketing.`}
+            {`Hey there! 👋 Welcome
+              I'm tech-savvy computer science graduate with a passion for video editing and creating stunning visual stories.
+              But my creative journey doesn't end there. I'm a social media and digital marketing enthusiast and harnessing AI on Facebook, Instagram, and LinkedIn to ignite brand engagement. 📈
+              In addition, I'm skilled in graphic design, content creation, and social media management. I craft eye-catching visuals, produce engaging content, and manage digital platforms to maximize reach and impact. 
+              🚀 Connect with me to discuss how we can elevate your brand through video production, graphic design, content creation, social media management, and digital marketing.`}
             </p>
           </div>
         </div>
