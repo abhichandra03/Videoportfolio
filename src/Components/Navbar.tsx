@@ -1,62 +1,96 @@
-'use client'
-import Image from 'next/image';
-import Link from 'next/link';
-import { FC, useState } from 'react'
-import logo from './../../public/vercel.svg'
-import { FaBars, FaTimes, FaLinkedin } from 'react-icons/fa';
-import {BsFillPersonLinesFill} from 'react-icons/bs'
+"use client";
+import Image from "next/image";
+import { Link } from "react-scroll";
+import { FC, useState } from "react";
+import logo from "./../../public/vercel.svg";
+import { FaBars, FaTimes, FaLinkedin } from "react-icons/fa";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import Skills from "./Skills";
+import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 
-interface NavbarProps {
-  
-}
+interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
-    const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(false);
 
   const handleClick = () => setNav(!nav);
 
-
   return (
-    <div className="fixed w-full h-[40px] top-[20px] flex justify-center items-center px-4  text-[#FAEED1] z-10">
-      {/* <div className=" p-4 text-3xl">
-        <Image
-          src={logo}
-          className="rounded-full aspect-square object-cover"
-          alt=""
-          width={60}
-          height={60}
-        />
-      </div> */}
+    <div className="fixed w-full h-[40px] top-[15px] flex justify-center items-center z-10">
       {/*menu*/}
-      <div className='w-2/3 h-full flex justify-center items-center rounded-lg shadow-xl shadow-[10px_10px_20px_10px_rgb(0,0,0,0.1)] bg-[#607274] p-4 z-10 '>
-
-      <ul className="hidden md:flex justify-around w-1/2 lg:w-full">
-        <li>
-          <a href="#home" >
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#about" >
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#skills" >
-            Skills
-          </a>
-        </li>
-        <li>
-          <a href='#work'>
-            Work
-          </a>
-        </li>
-        <li>
-          <a href="#contact" >
-            Contact Me
-          </a>
-        </li>
-      </ul>
+      <div className="w-[900px] h-full flex justify-center items-center z-10 ">
+        <ul className="hidden bg-[#3C5B6F] md:flex justify-around w-2/3 lg:w-full rounded-lg p-2  shadow-xl shadow-[10px_10px_20px_10px_rgb(0,0,0,0.1)]">
+          <li>
+            <button>
+              <Link
+                to="home"
+                activeClass="active"
+                duration={500}
+                offset={-60}
+                smooth={true}
+                spy={true}
+              >
+                Home
+              </Link>
+            </button>
+          </li>
+          <li>
+            <button>
+              <Link
+                to="about"
+                activeClass="active"
+                duration={500}
+                offset={-60}
+                smooth={true}
+                spy={true}
+              >
+                About
+              </Link>
+            </button>
+          </li>
+          <li>
+            <button>
+              <Link
+                to="skills"
+                activeClass="active"
+                duration={500}
+                offset={-60}
+                smooth={true}
+                spy={true}
+              >
+                Skills
+              </Link>
+            </button>
+          </li>
+          <li>
+            <button>
+              <Link
+                to="work"
+                activeClass="active"
+                duration={500}
+                offset={-60}
+                smooth={true}
+                spy={true}
+              >
+                Work
+              </Link>
+            </button>
+          </li>
+          <li>
+            <button>
+              <Link
+                to="contact"
+                activeClass="active"
+                duration={500}
+                offset={-60}
+                smooth={true}
+                spy={true}
+              >
+                Contact Me
+              </Link>
+            </button>
+          </li>
+        </ul>
       </div>
 
       {/* Hamburger */}
@@ -70,35 +104,86 @@ const Navbar: FC<NavbarProps> = ({}) => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#607274] flex flex-col  justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-[#153448] flex flex-col  justify-center items-center"
         }
       >
         <li className="py-6 texy-4xl">
-          <a href='#home' onClick={handleClick} >
-            Home
-          </a>
+          <button>
+            <Link
+              onClick={handleClick}
+              to="home"
+              activeClass="active"
+              duration={500}
+              offset={-60}
+              smooth={true}
+              spy={true}
+            >
+              Home
+            </Link>
+          </button>
         </li>
         <li className="py-6 texy-4xl">
-          <a href='#about' onClick={handleClick} >
-            About
-          </a>
+          <button>
+            <Link
+              onClick={handleClick}
+              to="about"
+              activeClass="active"
+              duration={500}
+              offset={-60}
+              smooth={true}
+              spy={true}
+            >
+              About
+            </Link>
+          </button>
         </li>
-        <li  className="py-6 texy-4xl">
-          <a href='#skills' onClick={handleClick} >
-            Skills
-          </a>
+        <li className="py-6 texy-4xl">
+          <button>
+            <Link
+              onClick={handleClick}
+              to="skills"
+              activeClass="active"
+              duration={500}
+              offset={-60}
+              smooth={true}
+              spy={true}
+            >
+              Skills
+            </Link>
+          </button>
         </li>
-        <li  className="py-6 texy-4xl">
-          <a href='#work' onClick={handleClick} >
-            Work
-          </a>
+        <li className="py-6 texy-4xl">
+          <button>
+            <Link
+              onClick={handleClick}
+              to="work"
+              activeClass="active"
+              duration={500}
+              offset={-60}
+              smooth={true}
+              spy={true}
+            >
+              Work
+            </Link>
+          </button>
         </li>
-        <li  className="py-6 texy-4xl">
-          <a href='#contact'  onClick={handleClick} >
-            Contact Me
-          </a>
+        <li className="py-6 texy-4xl">
+          <button>
+            <Link
+              onClick={handleClick}
+              to="contact"
+              activeClass="active"
+              duration={500}
+              offset={-60}
+              smooth={true}
+              spy={true}
+            >
+              Contact Me
+            </Link>
+          </button>
         </li>
       </ul>
+      {/* <li className="py-6 texy-4xl"> */}
 
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
@@ -106,7 +191,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-around items-center w-full text-gray-300"
-              href="https://www.linkedin.com/in/abhichandra03/"
+              href="https://www.linkedin.com/in/gayatrisingh11/"
               target="blank"
             >
               LinkedIn <FaLinkedin size={30} />
@@ -124,7 +209,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

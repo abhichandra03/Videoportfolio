@@ -8,7 +8,7 @@ const Contact: FC<ContactProps> = ({}) => {
   return (
     <div
       id="contact"
-      className="bg-[#607274] w-full h-screen flex justify-center items-center p-4 text-[#FAEED1]"
+      className=" w-full h-screen flex justify-center items-center p-4 "
     >
       <form
         action="https://getform.io/f/0b392aeb-cef8-49f8-b38e-d8f83596ce26"

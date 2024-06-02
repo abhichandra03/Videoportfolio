@@ -26,16 +26,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="!scroll-smooth">
-      <body className={`${inter.className} ${poppins.variable} scrollbar-hide`}>
-        <div className="max-w-[100%] h-screen overflow-y-scroll overflow-x-hidden scrollbar-hide">
-          <Navbar/>
-          <HomePage/>
-          <About/>
-          <Skills/>
-          <Work/>
-          <Contact/>
-        </div>
+    <html lang="en" className="!scroll-smooth scrollbar-hide">
+      <body className={`${inter.className} ${poppins.variable}`}>
+        {children}
       </body>
     </html>
   );

@@ -24,7 +24,7 @@ const Work: FC<workProps> = ({}) => {
     const [isMuted, setIsMuted] = useState(true)
     const reels = ["reel1.mp4", "reel2.mp4"]
     const videos = ['video1.mp4']
-    const n = reels.length
+    const n = videos.length
     const [isHovering, setIsHovering] = useState<boolean[]>(new Array(videos.length+reels.length).fill(false))
     
   const {scrollContainerRef, scrollTo, handleScroll, isAtStart, isAtEnd} = useSmoothHorizontalScroll();
@@ -58,7 +58,7 @@ const Work: FC<workProps> = ({}) => {
 
 
   return (
-    <div id='work' className='max-w-screen flex flex-col justify-evenly items-center h-auto bg-[#607274] text-[#FAEED1]  overflow-x-hidden poppins'>
+    <div id='work' className='max-w-[100%] flex flex-col justify-evenly items-center h-auto overflow-x-hidden'>
         <div className='flex'>
             <p className='font-bold inline text-4xl border-b-4 border-pink-400'>My Work</p>
         </div>
@@ -68,10 +68,10 @@ const Work: FC<workProps> = ({}) => {
         <div className='w-full flex items-center justify-start p-4'>
             <p className='font-bold inline text-3xl border-b-4 border-pink-400'>Shorts</p>
         </div>
-        <div className='max-w-[1000px] h-auto flex flex-col sm:grid grid-cols-2 gap-16 p-4 justify-around items-center'>
+        <div className='max-w-[1000px] h-auto flex p-4 justify-center items-center'>
             {
                 videos.map((video, id) => (
-                    <div key={id} className='relative flex flex-col w-full h-[100%]'
+                    <div key={id} className='relative flex flex-col w-full h-full md:w-1/2 md:h-1/2'
                         >  
                         
                         <div className='relative flex rounded-3xl hover:opacity-[90%]  duration-400 overflow-hidden'>
@@ -89,9 +89,9 @@ const Work: FC<workProps> = ({}) => {
                                   videoRef.current.push(el);
                                 }}}
                                 key={id} src={require(`../../assests/${video}`)} controls={false} autoPlay loop
-                                onClick={()=>handleMute(n+id)}
-                                onMouseEnter={() =>onMouseEnter(n+id)}
-                                onMouseLeave={() =>onMouseLeave(n+id)}
+                                onClick={()=>handleMute(id)}
+                                onMouseEnter={() =>onMouseEnter(id)}
+                                onMouseLeave={() =>onMouseLeave(id)}
                                 muted/>
                             </div>
                         </div>
@@ -102,51 +102,52 @@ const Work: FC<workProps> = ({}) => {
         
         
         {/*Carousel*/}
-        <div className='max-w-[1000px] w-full flex flex-col items-center justify-start p-4'>
+        <div className='max-w-[1000px] w-full h-screen flex flex-col items-center justify-start p-4'>
             <div className='w-full flex items-center justify-start p-4'>
                 <p className='font-bold inline text-3xl border-b-4 border-pink-400'>Post / Carousel</p>
             </div>
-            <div className='max-w-[1000px] h-auto flex flex-col p-4 justify-around items-center'>
-                <div className='flex w-full h-auto justify-center items-center'>
+            <div className='max-w-[1000px] h-2/3 flex flex-col p-4 justify-around items-center'>
+                <div className='flex w-full h-2/3 justify-center items-center'>
                     <Image 
                     src={post}
-                    className='object-contain w-1/3 h-1/2 rounded-3xl'
+                    className='object-contain w-auto h-full rounded-3xl'
                     alt=''
                     />
                 </div>
-            <div className='flex w-full h-auto justify-center items-center p-4 -translate-x-1'>
-                    
-            <div className="flex flex-nowrap items-center w-full text-center m-4 py-4">
+
+
+            <div className='flex w-full h-auto justify-center items-center p-4 lg:my-4 -translate-x-1'>    
+            <div className="flex flex-nowrap items-center h-full w-full text-center m-4 py-4">
 
             
             <div
               id={"slider"}  
               className="flex flex-nowrap items-center w-full h-full text-center  overflow-x-scroll scroll-smooth no-scrollbar"
             >
-              <div className="flex justify-center items-center min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+              <div className="flex justify-center items-center  min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
                <Image 
                     src={carousel1}
-                    className='object-contain w-2/3 h-1/2 rounded-3xl'
+                    className='object-contain w-3/4 h-2/3 rounded-3xl'
                     alt=''
                     />
               </div>
               <div className="flex justify-center items-center min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2"><Image 
                     src={carousel2}
-                    className='object-contain w-2/3 h-1/2 rounded-3xl'
+                    className='object-contain w-3/4 h-2/3 rounded-3xl'
                     alt=''
                     />
               </div>
               <div className="flex justify-center items-center min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
                 <Image 
                     src={carousel3}
-                    className='object-contain w-2/3 h-1/2 rounded-3xl'
+                    className='object-contain w-3/4 h-2/3 rounded-3xl'
                     alt=''
                     />
               </div>
               <div className="flex justify-center items-center min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
                 <Image 
                     src={carousel4}
-                    className='object-contain w-2/3 h-1/2 rounded-3xl'
+                    className='object-contain w-3/4 h-2/3 rounded-3xl'
                     alt=''
                     />
               </div>
@@ -231,9 +232,9 @@ const Work: FC<workProps> = ({}) => {
                                   videoRef.current.push(el);
                                 }}}
                             key={id} src={require(`../../assests/${video}`)} controls={false} autoPlay loop
-                            onClick={()=>handleMute(id)}
-                            onMouseEnter={() =>onMouseEnter(id)}
-                            onMouseLeave={() =>onMouseLeave(id)}
+                            onClick={()=>handleMute(n+id)}
+                            onMouseEnter={() =>onMouseEnter(n+id)}
+                            onMouseLeave={() =>onMouseLeave(n+id)}
                             muted/>
                             </div>
                 ))

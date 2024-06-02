@@ -1,4 +1,6 @@
-import { FC } from 'react'
+'use client'
+import { FC, useRef } from 'react'
+import {Element} from 'react-scroll/modules' 
 
 
 interface AboutProps {
@@ -6,11 +8,13 @@ interface AboutProps {
 }
 
 const About: FC<AboutProps> = ({}) => {
+
+
   return (
-    <div id='about' className='flex w-full h-full bg-[#607274] text-[#FAEED1] poppins'>
+    <Element name='about' id='about' className='flex w-full h-full  poppins'>
         <div className="flex flex-col justify-center items-center w-full h-full">
         {/* Container div */}
-        <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 ">
+        <div  className="max-w-[1000px] w-full grid grid-cols-2 gap-8 ">
           <div className="sm:text-right pb-8 pl-4">
             <p className="text-4xl font-bold inline border-b-4 border-pink-400">
               About
@@ -33,8 +37,9 @@ const About: FC<AboutProps> = ({}) => {
           </div>
         </div>
       </div>
+    </Element>
 
-    </div>)
+    )
 }
 
 export default About
