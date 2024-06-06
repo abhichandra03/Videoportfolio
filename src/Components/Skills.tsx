@@ -27,9 +27,9 @@ const Skills: FC<SkillsProps> = ({}) => {
   return (
     <div
       id="skills"
-      className="max-w-[1000px] flex flex-col w-full h-screen justify-center items-center"
+      className="max-w-[1200px] flex flex-col w-full h-screen justify-center items-center"
     >
-      <div className="max-w-[1000px] w-full flex justify-center items-center">
+      <div className="max-w-[1200px] w-full flex justify-center items-center">
         <p className="text-4xl font-bold inline border-b-4 border-pink-400 bebas">
           Skills
         </p>
@@ -39,7 +39,7 @@ const Skills: FC<SkillsProps> = ({}) => {
         <div className="flex w-full h-auto justify-center items-center p-4 -translate-x-1">
           <div
             ref={ref}
-            className="flex flex-nowrap items-center w-full h-full text-center  overflow-x-scroll scroll-smooth no-scrollbar"
+            className="flex flex-nowrap items-center max-w-[1000px] w-full h-full text-center  overflow-x-scroll scroll-smooth no-scrollbar"
           >
             <div className="rounded-full bg-[#948979] text-black flex absolute left-0 top-50 z-10">
               <button onClick={() => scroll(-500)}>

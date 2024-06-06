@@ -72,13 +72,13 @@ const Work: FC<workProps> = ({}) => {
       </div>
 
       {/*Podcast*/}
-      <div className="max-w-[1000px] w-full flex flex-col items-center justify-start p-4">
+      <div className="max-w-[1200px] w-full flex flex-col items-center justify-start p-4">
         <div className="w-full flex items-center justify-start p-4">
           <p className="font-bold inline text-3xl border-b-4 border-pink-400 bebas">
             Shorts
           </p>
         </div>
-        <div className="max-w-[1000px] h-auto flex p-4 justify-center items-center">
+        <div className="max-w-[1200px] h-auto flex p-4 justify-center items-center">
           {videos.map((video, id) => (
             <div
               key={id}
@@ -123,14 +123,14 @@ const Work: FC<workProps> = ({}) => {
       </div>
 
       {/*Carousel*/}
-      <div className="max-w-[1000px] w-full h-screen flex flex-col items-center justify-start p-4">
+      <div className="max-w-[1200px] w-full  flex flex-col items-center justify-start p-4">
         <div className="w-full flex items-center justify-start p-4">
           <p className="font-bold inline text-3xl border-b-4 border-pink-400 bebas">
             Post / Carousel
           </p>
         </div>
         <div className="w-full h-full flex flex-col p-4 justify-around items-center">
-          <div className=" relative flex w-full md:w-1/2 min-w-[250px] h-2/3 justify-center items-center min-h-[120px]  lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
+          <div className=" relative flex w-full md:w-1/2 min-w-[250px] h-2/3 justify-center items-center min-h-[250px]  lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
             <Image
               src={"/post1.png"}
               className="object-cover w-auto h-full rounded-3xl p-2"
@@ -152,7 +152,7 @@ const Work: FC<workProps> = ({}) => {
                   </button>
                 </div>
 
-                <div className=" relative flex w-full h-full justify-center items-center min-h-[120px] min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] mx-4">
+                <div className="relative flex w-full justify-center items-center min-h-[250px]  h-full min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] mx-4">
                   <Image
                     src={"/Carouselslide01.png"}
                     className="object-cover w-auto h-full rounded-3xl p-4"
@@ -160,7 +160,7 @@ const Work: FC<workProps> = ({}) => {
                     fill
                   />
                 </div>
-                <div className="relative flex justify-center items-center w-full h-full min-h-[120px] min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] mx-4">
+                <div className="relative flex justify-center items-center w-full min-h-[250px]  h-full min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] mx-4">
                   <Image
                     src={"/Carouselslide02.png"}
                     className="object-cover  rounded-3xl p-2"
@@ -168,7 +168,7 @@ const Work: FC<workProps> = ({}) => {
                     fill
                   />
                 </div>
-                <div className="relative flex justify-center items-center w-full h-full min-h-[120px] min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] mx-4">
+                <div className="relative flex justify-center items-center w-full min-h-[250px]  h-full min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] mx-4">
                   <Image
                     src={"/Carouselslide03.png"}
                     className="object-cover  rounded-3xl p-2"
@@ -176,7 +176,7 @@ const Work: FC<workProps> = ({}) => {
                     fill
                   />
                 </div>
-                <div className="relative flex justify-center items-center w-full h-full min-h-[120px] min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] mx-4">
+                <div className="relative flex justify-center items-center w-full min-h-[250px]  h-full min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] mx-4">
                   <Image
                     src={"/Carouselslide04.png"}
                     className="object-cover  rounded-3xl p-2"
@@ -196,13 +196,13 @@ const Work: FC<workProps> = ({}) => {
       </div>
 
       {/*Banners*/}
-      <div className="max-w-[1000px] w-full flex flex-col items-center justify-start p-4">
+      <div className="max-w-[1200px] w-full flex flex-col items-center justify-start p-4">
         <div className="w-full flex items-center justify-start p-4">
           <p className="font-bold inline text-3xl border-b-4 border-pink-400 bebas">
             Banners
           </p>
         </div>
-        <div className="flex max-w-[1000px] w-full h-full flex flex-col sm:flex-row p-4 justify-between items-center">
+        <div className="flex max-w-[1200px] w-full h-full flex flex-col sm:flex-row p-4 justify-between items-center">
           <div className="relative flex w-full sm:w-1/2 min-w-[250px] h-full min-h-[250px] items-center justify-center m-4">
             <Image
               src={"/channelArt.jpg"}
@@ -223,7 +223,7 @@ const Work: FC<workProps> = ({}) => {
       </div>
 
       {/*Logo*/}
-      <div className="max-w-[1000px] w-full flex flex-col items-center justify-start p-4">
+      <div className="max-w-[1200px] w-full flex flex-col items-center justify-start p-4">
         <div className="w-full flex items-center justify-start p-4">
           <p className="font-bold inline text-3xl border-b-4 border-pink-400 bebas">
             Logos
@@ -250,13 +250,13 @@ const Work: FC<workProps> = ({}) => {
       </div>
 
       {/*Editing*/}
-      <div className="max-w-[1000px] w-full flex flex-col items-center justify-start p-4">
+      <div className="max-w-[1200px] w-full flex flex-col items-center justify-start p-4">
         <div className="w-full flex items-center justify-start p-4">
           <p className="font-bold inline text-3xl border-b-4 border-pink-400 bebas">
             Editing
           </p>
         </div>
-        <div className="max-w-[1000px] h-auto flex flex-col sm:grid grid-cols-2 gap-16 p-4 justify-around items-center">
+        <div className="max-w-[1200px] h-auto flex flex-col sm:grid grid-cols-2 gap-16 p-4 justify-around items-center">
           {reels.map((video:string, id) => (
             <div
               key={id}

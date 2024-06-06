@@ -28,7 +28,7 @@ const About: FC<AboutProps> = ({}) => {
           <div>
             <p>
             {`Hey there! 👋 Welcome
-              👋 I'm a computer science graduate specializing in video editing, graphic design, and digital marketing. 
+              I'm a computer science graduate specializing in video editing, graphic design, and digital marketing. 
               I use AI on social media to boost brand engagement and create eye-catching visuals and content. Let's connect to elevate your brand  strategies. 🚀`}
             </p>
           </div>
