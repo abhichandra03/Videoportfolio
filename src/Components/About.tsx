@@ -23,15 +23,13 @@ const About: FC<AboutProps> = ({}) => {
         </div>
         <div className="max-w-[1000px] w-full h-auto grid sm:grid-cols-2 gap-8 sm:gap-y-16 py-6  px-4">
           <div className="sm:text-right text-3xl font-bold">
-            <p>{`Hi, this is a portfolio website.`}<br/>{`Please take a look around.`}</p>
+            <p>{`This is a portfolio website.`}<br/>{`Please take a look around.`}</p>
           </div>
           <div>
             <p>
             {`Hey there! 👋 Welcome
-              I'm tech-savvy computer science graduate with a passion for video editing and creating stunning visual stories.
-              But my creative journey doesn't end there. I'm a social media and digital marketing enthusiast and harnessing AI on Facebook, Instagram, and LinkedIn to ignite brand engagement. 📈
-              In addition, I'm skilled in graphic design, content creation, and social media management. I craft eye-catching visuals, produce engaging content, and manage digital platforms to maximize reach and impact. 
-              🚀 Connect with me to discuss how we can elevate your brand through video production, graphic design, content creation, social media management, and digital marketing.`}
+              👋 I'm a computer science graduate specializing in video editing, graphic design, and digital marketing. 
+              I use AI on social media to boost brand engagement and create eye-catching visuals and content. Let's connect to elevate your brand  strategies. 🚀`}
             </p>
           </div>
           <div className='relative  flex justify-center items-center w-full h-[200px]'>

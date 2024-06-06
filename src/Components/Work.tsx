@@ -85,7 +85,7 @@ const Work: FC<workProps> = ({}) => {
               className="relative flex flex-col w-full h-full md:w-1/2 md:h-1/2"
             >
               <div className="relative bg-red-100 flex rounded-3xl hover:opacity-[90%]  duration-400 overflow-hidden">
-                {isHovering[n + id] ? (
+                {isHovering[id] ? (
                   isMuted ? (
                     <HiMiniSpeakerWave
                       size={40}
@@ -133,7 +133,7 @@ const Work: FC<workProps> = ({}) => {
           <div className=" relative flex w-full md:w-1/2 min-w-[250px] h-2/3 justify-center items-center min-h-[120px]  lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
             <Image
               src={"/post1.png"}
-              className="object-cover w-auto h-full rounded-3xl p-4"
+              className="object-cover w-auto h-full rounded-3xl p-2"
               alt=""
               fill
             />
@@ -262,16 +262,16 @@ const Work: FC<workProps> = ({}) => {
               key={id}
               className="relative flex w-full h-[100%] rounded-3xl hover:opacity-[90%]  duration-400 overflow-hidden"
             >
-              {isHovering[id] ? (
+              {isHovering[n+id] ? (
                 isMuted ? (
                   <HiMiniSpeakerWave
                     size={40}
-                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
                   />
                 ) : (
                   <HiMiniSpeakerXMark
                     size={40}
-                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
                   />
                 )
               ) : (

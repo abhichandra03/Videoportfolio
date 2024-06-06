@@ -57,7 +57,7 @@ const Skills: FC<SkillsProps> = ({}) => {
               </div>
               <p>Canva</p>
             </div>
-            <div className="w-full h-full flex flex-col justify-center items-center min-h-[120px] min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+            <div className="w-full h-full flex flex-col justify-center items-center min-h-[150px] min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
               <div className="relative w-full h-full">
                 <Image
                   src={"/google.png"}
@@ -68,7 +68,7 @@ const Skills: FC<SkillsProps> = ({}) => {
               </div>
               <p>Google Workspace</p>
             </div>
-            <div className="w-full h-full flex flex-col justify-center items-center min-h-[120px] min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+            <div className="w-full h-full flex flex-col justify-center items-center min-h-[150px] min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
               <div className="relative w-full h-full">
                 <Image
                   src={"/cms.png"}
@@ -79,7 +79,7 @@ const Skills: FC<SkillsProps> = ({}) => {
               </div>
               <p>Content ManagementSystem</p>
             </div>
-            <div className="w-full h-full flex flex-col justify-center items-center  min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+            <div className="w-full h-full flex flex-col justify-center items-center min-h-[150px] min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
               <div className="relative w-full h-full">
                 <Image
                   src={"/adobeAfter.png"}
@@ -90,7 +90,7 @@ const Skills: FC<SkillsProps> = ({}) => {
               </div>
               <p>Adobe After Effects</p>
             </div>
-            <div className="w-full h-full flex flex-col justify-center items-center min-h-[120px] min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+            <div className="w-full h-full flex flex-col justify-center items-center min-h-[150px] min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
               <div className="relative w-full h-full">
                 <Image
                   src={"/adobeCreative.png"}
@@ -101,7 +101,7 @@ const Skills: FC<SkillsProps> = ({}) => {
               </div>
               <p>Adobe Creative Suite</p>
             </div>
-            <div className="w-full h-full flex flex-col justify-center items-center min-h-[120px] min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+            <div className="w-full h-full flex flex-col justify-center items-center min-h-[150px] min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
               <div className="relative w-full h-full">
                 <Image
                   src={"/googleAnalytics.png"}
@@ -112,7 +112,7 @@ const Skills: FC<SkillsProps> = ({}) => {
               </div>
               <p>Google Analytics</p>
             </div>
-            <div className="w-full h-full flex flex-col justify-center items-center min-h-[120px] min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
+            <div className="w-full h-full flex flex-col justify-center items-center min-h-[150px] min-w-[300px] lg:min-w-[300px] shadow-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:scale-110 duration-500 mx-8 p-2">
               <div className="relative w-full h-full">
                 <Image
                   src={"/Meta.png"}
