@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Poppins} from "next/font/google";
+import { Bebas_Neue, Inter, Poppins} from "next/font/google";
 import "./globals.css";
 import HomePage from "@/Components/HomePage";
 import About from "@/Components/About";
@@ -14,6 +14,11 @@ const poppins = Poppins({
   weight: ['400', '600', '800'],
   variable: '--font-poppins',
 })
+const bebasNeue = Bebas_Neue({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-bebas',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth scrollbar-hide">
-      <body className={`${inter.className} ${poppins.variable}`}>
+      <body className={`${inter.className} ${poppins.variable} ${bebasNeue.variable}`}>
         {children}
       </body>
     </html>

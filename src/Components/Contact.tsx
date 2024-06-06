@@ -13,10 +13,10 @@ const Contact: FC<ContactProps> = ({}) => {
       <form
         action="https://getform.io/f/0b392aeb-cef8-49f8-b38e-d8f83596ce26"
         method="POST"
-        className="flex flex-col max-w-[1000px]  w-full"
+        className="flex flex-col max-w-[600px]  w-full"
       >
         <div className="b-8">
-          <p className="text-4xl font-bold inline border-b-4 border-pink-400">
+          <p className="text-4xl font-bold inline border-b-4 border-pink-400 bebas">
             Contact
           </p>
           <p className="py-8">

@@ -6,7 +6,6 @@ import logo from "./../../public/vercel.svg";
 import { FaBars, FaTimes, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Skills from "./Skills";
-import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 
 interface NavbarProps {}
 
@@ -25,7 +24,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
               <Link
                 to="home"
                 activeClass="active"
-                duration={500}
+                duration={200}
                 offset={-60}
                 smooth={true}
                 spy={true}
@@ -39,7 +38,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
               <Link
                 to="about"
                 activeClass="active"
-                duration={500}
+                duration={200}
                 offset={-60}
                 smooth={true}
                 spy={true}
@@ -53,7 +52,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
               <Link
                 to="skills"
                 activeClass="active"
-                duration={500}
+                duration={200}
                 offset={-60}
                 smooth={true}
                 spy={true}
@@ -67,7 +66,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
               <Link
                 to="work"
                 activeClass="active"
-                duration={500}
+                duration={200}
                 offset={-60}
                 smooth={true}
                 spy={true}
@@ -81,7 +80,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
               <Link
                 to="contact"
                 activeClass="active"
-                duration={500}
+                duration={200}
                 offset={-60}
                 smooth={true}
                 spy={true}
@@ -94,7 +93,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
       </div>
 
       {/* Hamburger */}
-
+      
       <div className="md:hidden z-10" onClick={handleClick}>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
@@ -104,7 +103,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#153448] flex flex-col  justify-center items-center"
+            : "absolute top-0 left-0 w-full min-h-screen bg-[#153448]  flex flex-col  justify-center items-center"
         }
       >
         <li className="py-6 texy-4xl">
@@ -113,7 +112,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
               onClick={handleClick}
               to="home"
               activeClass="active"
-              duration={500}
+              duration={200}
               offset={-60}
               smooth={true}
               spy={true}
@@ -128,7 +127,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
               onClick={handleClick}
               to="about"
               activeClass="active"
-              duration={500}
+              duration={200}
               offset={-60}
               smooth={true}
               spy={true}
@@ -143,7 +142,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
               onClick={handleClick}
               to="skills"
               activeClass="active"
-              duration={500}
+              duration={200}
               offset={-60}
               smooth={true}
               spy={true}
@@ -158,7 +157,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
               onClick={handleClick}
               to="work"
               activeClass="active"
-              duration={500}
+              duration={200}
               offset={-60}
               smooth={true}
               spy={true}
@@ -173,7 +172,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
               onClick={handleClick}
               to="contact"
               activeClass="active"
-              duration={500}
+              duration={200}
               offset={-60}
               smooth={true}
               spy={true}
@@ -200,8 +199,8 @@ const Navbar: FC<NavbarProps> = ({}) => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-600">
             <a
               className="flex justify-around items-center w-full text-gray-300"
-              href={require("../../assests/pfp.jpeg")}
-              download="Abhishek Chandra's Resume"
+              href='ResumeGayatri.pdf'
+              download="Gayatri Singh's Resume"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>

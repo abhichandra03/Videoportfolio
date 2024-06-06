@@ -1,30 +1,29 @@
 'use client'
 import { FC, useRef } from 'react'
-import {Element} from 'react-scroll/modules' 
+import Image from 'next/image'
 
 
 interface AboutProps {
   
-}
+} 
 
 const About: FC<AboutProps> = ({}) => {
 
 
   return (
-    <Element name='about' id='about' className='flex w-full h-full  poppins'>
-        <div className="flex flex-col justify-center items-center w-full h-full">
+    <div id='about' className='flex w-full h-full  poppins'>
         {/* Container div */}
+        <div className="flex flex-col justify-center items-center w-full h-full">
         <div  className="max-w-[1000px] w-full grid grid-cols-2 gap-8 ">
           <div className="sm:text-right pb-8 pl-4">
-            <p className="text-4xl font-bold inline border-b-4 border-pink-400">
-              About
+            <p className="text-4xl font-bold inline border-b-4 border-pink-400 bebas">
+              {`About`}
             </p>
           </div>
-          <div></div>
         </div>
-        <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 py-6 px-4">
-          <div className="sm:text-right text-4xl font-bold">
-            <p>Hi, this is a portfolio website. Please take a look around.</p>
+        <div className="max-w-[1000px] w-full h-auto grid sm:grid-cols-2 gap-8 sm:gap-y-16 py-6  px-4">
+          <div className="sm:text-right text-3xl font-bold">
+            <p>{`Hi, this is a portfolio website.`}<br/>{`Please take a look around.`}</p>
           </div>
           <div>
             <p>
@@ -35,9 +34,20 @@ const About: FC<AboutProps> = ({}) => {
               🚀 Connect with me to discuss how we can elevate your brand through video production, graphic design, content creation, social media management, and digital marketing.`}
             </p>
           </div>
+          <div className='relative  flex justify-center items-center w-full h-[200px]'>
+          <Image
+                src={'/ig.jpeg'}
+                className='object-contain h-full'
+                alt=''
+                fill
+                />
+          </div>
+          <div className='flex justify-center items-center w-full h-full'>
+          <p>{`As a passionate creator and editor, I've established an engaging presence on Instagram through my editing page.`}</p>
+          </div>
         </div>
       </div>
-    </Element>
+    </div>
 
     )
 }

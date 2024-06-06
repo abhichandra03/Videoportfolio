@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { FC } from 'react'
-import pfp from '../../assests/pfp.jpeg'
 
 interface HomePageProps {
   
@@ -17,12 +16,13 @@ const HomePage: FC<HomePageProps> = ({}) => {
         </div>
     </div>
 
-    <div className='flex justify-center items-center w-full h-1/2  p-2 md:w-2/5 md:h-full'>
-        <div className=' flex justify-center items-center max-h-1/2 max-w-full overflow-hidden '>
+    <div className='flex justify-center items-center w-full h-1/2 p-2 md:w-2/5 md:h-full'>
+        <div className='relative flex justify-center items-center  w-[200px] h-[200px] overflow-hidden '>
           <Image 
-          className='rounded-full aspect-square object-contain w-1/2 h-1/2 '
-          src={pfp}
-          alt='Pfp'
+          src={'/pfp.jpeg'}
+          className='object-contain rounded-full overflow-hidden '
+          alt={'Pfp'}
+          fill
           />
           
         </div>

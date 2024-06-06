@@ -41,6 +41,9 @@ html{
 .poppins {
   font-family: var(--font-poppins);
 }
+.bebas {
+  font-family: var(--font-bebas);
+}
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
