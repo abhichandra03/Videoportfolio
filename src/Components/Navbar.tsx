@@ -5,6 +5,7 @@ import { FC, useState } from "react";
 import logo from "./../../public/vercel.svg";
 import { FaBars, FaTimes, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BiLogoGmail } from "react-icons/bi";
 import Skills from "./Skills";
 
 interface NavbarProps {}
@@ -203,6 +204,14 @@ const Navbar: FC<NavbarProps> = ({}) => {
               download="Gayatri Singh's Resume"
             >
               Resume <BsFillPersonLinesFill size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600">
+            <a
+              className="flex justify-around items-center w-full text-gray-300"
+              href='mailto:gayatrisingh231@gmail.com'
+            >
+              Email <BiLogoGmail size={30} />
             </a>
           </li>
         </ul>
