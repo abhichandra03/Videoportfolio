@@ -17,7 +17,7 @@ const HomePage: FC<HomePageProps> = ({}) => {
     </div>
 
     <div className='flex justify-center items-center w-full h-1/2 p-2 md:w-2/5 md:h-full'>
-        <div className='relative flex justify-center items-center  w-[225px] h-[25vh] overflow-hidden '>
+        <div className='relative flex justify-center items-center w-[225px] h-[225px] overflow-hidden '>
           <Image 
           src={'/pfp.jpeg'}
           className='object-cover rounded-full overflow-hidden '
