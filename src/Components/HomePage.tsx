@@ -17,10 +17,10 @@ const HomePage: FC<HomePageProps> = ({}) => {
     </div>
 
     <div className='flex justify-center items-center w-full h-1/2 p-2 md:w-2/5 md:h-full'>
-        <div className='relative flex justify-center items-center  w-[200px] h-[200px] overflow-hidden '>
+        <div className='relative flex justify-center items-center  w-[225px] h-[25vh] overflow-hidden '>
           <Image 
           src={'/pfp.jpeg'}
-          className='object-contain rounded-full overflow-hidden '
+          className='object-cover rounded-full overflow-hidden '
           alt={'Pfp'}
           fill
           />

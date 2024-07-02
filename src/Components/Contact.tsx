@@ -17,7 +17,7 @@ const Contact: FC<ContactProps> = ({}) => {
       >
         <div className="b-8">
           <p className="text-4xl font-bold inline border-b-4 border-pink-400 bebas">
-            Contact
+            Contact Me
           </p>
           <p className="py-8">
             Submit the form or send me an email - <b>gayatrisingh231@gmail.com</b>
