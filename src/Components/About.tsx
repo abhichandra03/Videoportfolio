@@ -19,9 +19,9 @@ const About: FC<AboutProps> = ({}) => {
         <div className="max-w-[1000px] w-full h-auto flex flex-col">
           <div className="w-full h-auto py-6  px-4">
             <p className="text-xl">
-              {`Hey there! 👋 Welcome
-              I'm a computer science graduate specializing in video editing, graphic design, and digital marketing. 
-              I use AI on social media to boost brand engagement and create eye-catching visuals and content. Let's connect to elevate your brand  strategies. 🚀`}
+              {`Hey there! 👋 I’m Gayatri, a computer science grad who’s all about that Digital Marketing, Social Media Management, and Video Editing life. 
+              I love using AI to boost brand engagement and create visuals that pop. Want your social media to be as cool as the other side of the pillow? 
+              Let's team up and make some magic! 🚀`}
             </p>
           </div>
 
